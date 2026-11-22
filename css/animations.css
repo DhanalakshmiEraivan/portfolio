@@ -1,0 +1,165 @@
+/* ═══════════════════════════════════════════════════════════
+   QUADRA · MOTION
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Scroll reveals ──────────────────────────────────────── */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity .9s var(--ease),
+    transform 1s var(--ease);
+}
+html.js [data-reveal="scale"] {
+  transform: translateY(26px) scale(.95);
+  transition:
+    opacity 1s var(--ease),
+    transform 1.2s var(--ease);
+}
+html.js [data-reveal="left"] { transform: translateX(-30px); }
+html.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+html.js .cap[data-reveal] {
+  transition:
+    opacity .9s var(--ease),
+    transform 1s var(--ease),
+    background-color .35s,
+    padding-left .4s var(--ease);
+}
+
+/* ── Split headings ──────────────────────────────────────── */
+html.js [data-split] .w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: .1em;
+  margin-bottom: -.1em;
+}
+html.js [data-split] .w-i {
+  display: inline-block;
+  transform: translateY(112%);
+  opacity: .001;
+  will-change: transform;
+  transition:
+    transform 1.05s var(--ease),
+    opacity .5s ease;
+  transition-delay: calc(var(--i, 0) * 55ms);
+}
+html.js [data-split].is-in .w-i {
+  transform: translateY(0);
+  opacity: 1;
+}
+html.js .accent .w-i,
+html.js [data-split] .accent .w-i {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ── Hero entrance ───────────────────────────────────────── */
+html.js .hero-eyebrow,
+html.js .hero-lead,
+html.js .hero-ctas,
+html.js .hero-now,
+html.js .hero-foot {
+  opacity: 0;
+  transform: translateY(22px);
+}
+html.is-ready .hero-eyebrow {
+  animation: riseIn .9s .5s var(--ease) forwards;
+}
+html.is-ready .hero-lead {
+  animation: riseIn 1s .66s var(--ease) forwards;
+}
+html.is-ready .hero-ctas {
+  animation: riseIn 1s .78s var(--ease) forwards;
+}
+html.is-ready .hero-now {
+  animation: riseIn 1.1s .62s var(--ease) forwards;
+}
+html.is-ready .hero-foot {
+  animation: riseIn 1s 1.1s var(--ease) forwards;
+}
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Work card cinematic entry ───────────────────────────── */
+html.js .work-item .work-card {
+  opacity: 0;
+  transform: translateY(48px) scale(.982);
+  transition:
+    opacity 1s var(--ease),
+    transform 1.25s var(--ease);
+}
+html.js .work-item.is-in .work-card {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Reel & studio ───────────────────────────────────────── */
+html.js .reel[data-reveal] { transform: translateY(30px) scale(.96); }
+
+/* ── Decorative floats ───────────────────────────────────── */
+.contact-orb--blue { animation: orbFloat 20s ease-in-out infinite alternate; }
+.contact-orb--purple { animation: orbFloat 26s ease-in-out infinite alternate-reverse; }
+.contact-orb--orange { animation: orbFloat 17s ease-in-out infinite alternate; }
+@keyframes orbFloat {
+  from { translate: 0 0; }
+  to { translate: 3% -5%; }
+}
+
+/* ── Reduced motion ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  html.js [data-reveal],
+  html.js [data-reveal="scale"],
+  html.js [data-split] .w-i,
+  html.js .work-item .work-card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  html.js .hero-eyebrow,
+  html.js .hero-lead,
+  html.js .hero-ctas,
+  html.js .hero-now,
+  html.js .hero-foot,
+  html.js .hero-line > span {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  html.js .tech-track { animation: none !important; }
+  .hero-glow,
+  .contact-orb,
+  .status-dot::after,
+  .hero-scroll i::after,
+  .reel-play::before,
+  .seam-line {
+    animation: none !important;
+  }
+  .seam-line { stroke-dashoffset: 0 !important; }
+  .work-media { transform: none !important; }
+  .work-card::before { display: none; }
+  .work-bg { transform: none !important; }
+  .hero-video,
+  .reel-video { transform: none !important; }
+  .btn,
+  .link-arrow,
+  .work-open { transition: none !important; }
+}
+
+@media (hover: none) {
+  .work-card::before { display: none; }
+  .work-card:hover .work-bg { transform: scale(1.015); }
+  .hero-now:hover .hero-now-thumb img { transform: scale(1.01); }
+  .cap:hover { background: transparent; padding-left: 6px; }
+}

@@ -1,0 +1,104 @@
+/* =========================================================
+   START A PROJECT — CURVE + SPACING REFINEMENT
+   Keeps the existing visual design; removes the seam and
+   tightens the transition into the contact section.
+   ========================================================= */
+
+/* Let the existing curve meet the dark closing section cleanly. */
+.about-curve {
+  display: block;
+  width: 100%;
+  height: clamp(112px, 10vw, 148px);
+  margin-top: clamp(10px, 1.2vw, 18px);
+  margin-bottom: -1px;
+  line-height: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.about-curve svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Remove any hairline/border at the top of the closing block. */
+.closing {
+  margin-top: 0;
+  border: 0 !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.contact.contact--merged {
+  padding-top: clamp(34px, 4.2vw, 58px);
+  padding-bottom: clamp(18px, 2vw, 28px);
+  border: 0;
+  outline: 0;
+}
+
+/* Reduce the unnecessary vertical gaps inside Start a Project. */
+.contact--merged .contact-title {
+  margin-top: 17px;
+}
+
+.contact--merged .contact-lead {
+  margin-top: 17px;
+}
+
+.contact--merged .contact-actions {
+  margin-top: clamp(24px, 2.8vw, 34px);
+}
+
+.contact--merged .contact-foot {
+  margin-top: clamp(28px, 3.2vw, 42px);
+}
+
+.contact--merged .drag-stamp {
+  top: clamp(70px, 8vw, 116px);
+}
+
+@media (max-width: 900px) {
+  .about-curve {
+    height: 104px;
+    margin-top: 10px;
+  }
+
+  .contact.contact--merged {
+    padding-top: 34px;
+    padding-bottom: 18px;
+  }
+
+  .contact--merged .drag-stamp {
+    top: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-curve {
+    height: 78px;
+    margin-top: 6px;
+  }
+
+  .contact.contact--merged {
+    padding-top: 28px;
+    padding-bottom: 14px;
+  }
+
+  .contact--merged .contact-title {
+    margin-top: 14px;
+  }
+
+  .contact--merged .contact-lead {
+    margin-top: 14px;
+  }
+
+  .contact--merged .contact-actions {
+    margin-top: 22px;
+  }
+
+  .contact--merged .contact-foot {
+    margin-top: 26px;
+  }
+}

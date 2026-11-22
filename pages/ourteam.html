@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team | QuadraFroyn Solutions</title>
+  <meta name="description" content="The people behind QuadraFroyn Solutions — leadership, disciplines and the culture that shapes our products, client work and career guidance.">
+  <meta name="theme-color" content="#080E19">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://quadrafroyn.com/pages/ourteam.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Team | QuadraFroyn Solutions">
+  <meta property="og:description" content="The people behind QuadraFroyn Solutions — leadership, disciplines and the culture that shapes our products, client work and career guidance.">
+  <meta property="og:image" content="../assets/images/pages/team-hero15.jpg">
+  <meta property="og:url" content="https://quadrafroyn.com/pages/ourteam.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="apple-touch-icon" href="../assets/logo.png">
+  <link rel="preload" as="image" href="../assets/images/pages/team-hero15.jpg" fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/sections.css">
+  <link rel="stylesheet" href="../css/company.css">
+  <link rel="stylesheet" href="../css/pages-v15.css">
+  <script>(function(){document.documentElement.classList.add('js');})();</script>
+
+  <style>
+    /* Our-team page only. Shared site navigation and footer remain untouched. */
+    .qf-team-page{background:#fff;color:#17191d;min-height:1px}
+    .qf-team-section{background:#fff;padding:54px 24px 100px;overflow:hidden}
+    .qf-team-inner{width:min(1180px,100%);margin:0 auto}
+    .qf-team-heading{text-align:center;margin:0 auto 25px}
+    .qf-team-kicker{font:700 10px/1.4 Inter,sans-serif;letter-spacing:.2em;color:#bd812e;margin:0 0 10px}
+    .qf-team-heading h1{font:400 clamp(36px,5vw,54px)/1.08 "Inter Tight",Inter,sans-serif;letter-spacing:-.045em;color:#24262a;margin:0}
+    .qf-team-heading h1 strong{font-weight:700;color:#111318}
+    .qf-team-intro{font:400 14px/1.7 Inter,sans-serif;color:#777b82;margin:12px 0 0}
+    .qf-team-filters{display:flex;justify-content:center;align-items:center;gap:27px;margin:27px auto 39px}
+    .qf-filter{appearance:none;border:0;background:transparent;padding:7px 1px;color:#62666c;font:700 10px/1.2 Inter,sans-serif;letter-spacing:.13em;cursor:pointer;position:relative;transition:color .25s ease}
+    .qf-filter::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:#c68a38;transition:right .25s ease}
+    .qf-filter:hover,.qf-filter.is-active{color:#bd812e}
+    .qf-filter.is-active::after{right:0}
+    .qf-team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:52px;row-gap:48px;max-width:900px;margin:0 auto}
+    .qf-member{min-width:0;text-align:center;display:flex;flex-direction:column;align-items:center;animation:qfMemberIn .7s both}
+    .qf-member:nth-child(2){animation-delay:.06s}.qf-member:nth-child(3){animation-delay:.12s}
+    .qf-member:nth-child(4){animation-delay:.18s}.qf-member:nth-child(5){animation-delay:.24s}.qf-member:nth-child(6){animation-delay:.3s}
+    .qf-member[hidden]{display:none}
+    .qf-member-portrait{width:clamp(158px,17vw,190px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;background:#e8e9eb;position:relative;isolation:isolate;box-shadow:0 0 0 1px rgba(20,24,30,.07);transition:transform .45s cubic-bezier(.2,.75,.25,1),box-shadow .45s ease}
+    .qf-member-portrait::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(255,255,255,.65);z-index:1;pointer-events:none}
+    .qf-member-portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 38%;filter:grayscale(1);transform:scale(1.015);transition:filter .55s ease,transform .75s cubic-bezier(.2,.75,.25,1)}
+    .qf-member:hover .qf-member-portrait,.qf-member:focus-within .qf-member-portrait{transform:translateY(-5px);box-shadow:0 13px 30px rgba(20,24,30,.13)}
+    .qf-member:hover .qf-member-portrait img,.qf-member:focus-within .qf-member-portrait img{filter:grayscale(0);transform:scale(1.075)}
+    .qf-member h2{font:700 14px/1.35 "Inter Tight",Inter,sans-serif;letter-spacing:.075em;text-transform:uppercase;color:#292c31;margin:17px 0 5px}
+    .qf-member-role{font:700 9px/1.5 Inter,sans-serif;letter-spacing:.105em;text-transform:uppercase;color:#c58a3e;margin:0}
+    @keyframes qfMemberIn{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:1100px){.qf-team-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:72px;row-gap:52px}}
+    @media(max-width:680px){.qf-team-section{padding:42px 18px 72px}.qf-team-filters{gap:20px;margin:24px auto 32px}.qf-team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 20px}.qf-member-portrait{width:clamp(132px,34vw,168px)}.qf-member h2{font-size:12px}.qf-member-role{font-size:8px}}
+    @media(max-width:360px){.qf-team-filters{gap:14px}.qf-filter{font-size:9px}.qf-team-grid{column-gap:12px}.qf-member-portrait{width:128px}}
+    @media(prefers-reduced-motion:reduce){.qf-member,.qf-member-portrait,.qf-member-portrait img,.qf-filter,.qf-filter::after{animation:none!important;transition:none!important}}
+  </style>
+
+
+  <style id="qf-team-redesign">
+    /* ================================================================
+       QUADRAFROYN / OUR TEAM
+       Spacious navigation, editorial team hero and refined interactions
+       All styles are scoped to this page to avoid changing other pages.
+       ================================================================ */
+
+    :root {
+      --qft-ink: #17191d;
+      --qft-muted: #777b82;
+      --qft-soft: #f6f5f2;
+      --qft-paper: #ffffff;
+      --qft-gold: #bd812e;
+      --qft-gold-light: #e5bd7b;
+      --qft-line: rgba(24, 27, 32, .11);
+      --qft-ease: cubic-bezier(.2, .75, .25, 1);
+      --qft-header-height: 92px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--qft-header-height) + 22px);
+    }
+
+    body.inner-page.page-light {
+      overflow-x: clip;
+      background: var(--qft-paper);
+    }
+
+    /* Navigation: dedicated columns prevent logo and links from colliding. */
+    .site-header {
+      position: sticky !important;
+      inset: 0 0 auto;
+      z-index: 1000 !important;
+      width: 100%;
+      min-height: var(--qft-header-height);
+      background: rgba(255, 255, 255, .94) !important;
+      border-bottom: 1px solid rgba(20, 24, 30, .075);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+      isolation: isolate;
+    }
+
+    .site-header .nav-inner {
+      width: min(1440px, calc(100% - 72px)) !important;
+      min-height: var(--qft-header-height) !important;
+      margin-inline: auto !important;
+      padding: 12px 0 !important;
+      display: grid !important;
+      grid-template-columns: minmax(220px, 1fr) auto minmax(190px, 1fr) !important;
+      align-items: center !important;
+      column-gap: clamp(22px, 3vw, 54px) !important;
+    }
+
+    .site-header .nav-brand {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-self: start !important;
+      gap: 12px !important;
+      width: max-content !important;
+      max-width: 100%;
+      min-width: 0;
+      flex: none !important;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-header .nav-brand img {
+      display: block !important;
+      width: 48px !important;
+      height: 48px !important;
+      max-width: 48px;
+      object-fit: contain;
+      flex: 0 0 48px;
+    }
+
+    .site-header .nav-word {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+      min-width: 0;
+      color: #17191d !important;
+      font-family: "Inter Tight", Inter, sans-serif;
+      font-size: 17px !important;
+      font-weight: 750 !important;
+      line-height: 1.02 !important;
+      letter-spacing: -.055em !important;
+      white-space: nowrap;
+    }
+
+    .site-header .nav-word small {
+      display: block;
+      color: #9a713e !important;
+      font-family: Inter, sans-serif;
+      font-size: 9px !important;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+
+    .site-header .nav-primary {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: clamp(17px, 2.1vw, 34px) !important;
+      min-width: 0;
+      width: max-content;
+      white-space: nowrap;
+    }
+
+    .site-header .nav-link {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 5px;
+      min-height: 40px;
+      padding: 8px 0 !important;
+      color: #42454b !important;
+      font-family: Inter, sans-serif;
+      font-size: 11px !important;
+      font-weight: 650 !important;
+      line-height: 1.2 !important;
+      letter-spacing: .015em;
+      text-decoration: none;
+      transition: color .25s ease;
+    }
+
+    .site-header .nav-link:hover,
+    .site-header .nav-link:focus-visible {
+      color: var(--qft-gold) !important;
+    }
+
+    .site-header .nav-drop {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .site-header .nav-drop summary {
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .site-header .nav-drop summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .site-header .nav-caret {
+      width: 13px;
+      height: 13px;
+      transition: transform .25s ease;
+    }
+
+    .site-header .nav-drop[open] .nav-caret {
+      transform: rotate(180deg);
+    }
+
+    .site-header .nav-drop-panel {
+      position: absolute !important;
+      top: calc(100% + 13px) !important;
+      left: -22px !important;
+      z-index: 20;
+      display: grid !important;
+      grid-template-columns: minmax(190px, 1fr);
+      gap: 3px;
+      width: 265px !important;
+      padding: 12px !important;
+      border: 1px solid rgba(20, 24, 30, .08);
+      border-radius: 15px;
+      background: #fff !important;
+      box-shadow: 0 22px 60px rgba(17, 22, 30, .13);
+    }
+
+    .site-header .nav-drop-panel a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 39px;
+      padding: 9px 11px !important;
+      border-radius: 8px;
+      color: #42454b !important;
+      font-size: 11px !important;
+      line-height: 1.35;
+      text-decoration: none;
+      white-space: normal;
+      transition: background .2s ease, color .2s ease, padding .2s ease;
+    }
+
+    .site-header .nav-drop-panel a:hover {
+      padding-left: 15px !important;
+      color: #9b6929 !important;
+      background: #faf6ef;
+    }
+
+    .site-header .nav-actions {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .site-header .btn-nav {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 43px;
+      padding: 0 17px !important;
+      border: 1px solid #24272d !important;
+      border-radius: 999px !important;
+      background: #202329 !important;
+      color: #fff !important;
+      font-size: 10px !important;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+    }
+
+    .site-header .btn-nav:hover {
+      transform: translateY(-2px);
+      background: #9a692c !important;
+      border-color: #9a692c !important;
+      box-shadow: 0 8px 22px rgba(154, 105, 44, .2);
+    }
+
+    .site-header .btn-nav .ico {
+      width: 14px;
+      height: 14px;
+    }
+
+    .site-header .nav-burger {
+      display: none !important;
+    }
+
+    /* Mobile navigation trigger is enabled only when the desktop row no longer fits. */
+    @media (max-width: 1080px) {
+      .site-header .nav-inner {
+        grid-template-columns: minmax(0, 1fr) auto !important;
+        width: min(100% - 44px, 900px) !important;
+      }
+
+      .site-header .nav-primary {
+        display: none !important;
+      }
+
+      .site-header .nav-actions {
+        gap: 14px;
+      }
+
+      .site-header .nav-burger {
+        display: inline-flex !important;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        border: 1px solid rgba(20, 24, 30, .15);
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      .site-header .nav-burger span {
+        display: block;
+        width: 15px;
+        height: 1.5px;
+        border-radius: 2px;
+        background: #202329;
+        transition: transform .25s ease;
+      }
+    }
+
+    @media (max-width: 520px) {
+      :root {
+        --qft-header-height: 76px;
+      }
+
+      .site-header .nav-inner {
+        width: calc(100% - 34px) !important;
+        padding-block: 9px !important;
+      }
+
+      .site-header .nav-brand {
+        gap: 9px !important;
+      }
+
+      .site-header .nav-brand img {
+        width: 40px !important;
+        height: 40px !important;
+        flex-basis: 40px;
+      }
+
+      .site-header .nav-word {
+        font-size: 15px !important;
+      }
+
+      .site-header .btn-nav {
+        min-height: 39px;
+        padding-inline: 13px !important;
+        font-size: 9px !important;
+      }
+
+      .site-header .btn-nav .ico {
+        display: none;
+      }
+
+      .site-header .nav-actions {
+        gap: 9px;
+      }
+
+      .site-header .nav-burger {
+        width: 39px;
+        height: 39px;
+      }
+    }
+
+    /* Mobile sheet: readable spacing and predictable stacking. */
+    .mobile-menu {
+      z-index: 1100 !important;
+    }
+
+    .mobile-sheet {
+      width: min(440px, 92vw) !important;
+      padding: 25px !important;
+      background: #fbfaf8 !important;
+    }
+
+    .mobile-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      color: #1d2025;
+      font-family: "Inter Tight", sans-serif;
+      font-size: 19px;
+      font-weight: 750;
+      letter-spacing: -.05em;
+      text-decoration: none;
+    }
+
+    .mobile-brand em {
+      color: #a67536;
+      font-family: Inter, sans-serif;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: .23em;
+      text-transform: uppercase;
+    }
+
+    .mobile-nav {
+      display: grid;
+      gap: 0;
+      margin-top: 25px;
+    }
+
+    .mobile-nav a {
+      display: grid !important;
+      grid-template-columns: 34px 1fr 20px;
+      align-items: center;
+      gap: 12px;
+      min-height: 58px;
+      border-bottom: 1px solid rgba(20, 24, 30, .09);
+      color: #202329;
+      text-decoration: none;
+    }
+
+    .mobile-nav a i {
+      color: #b58240;
+      font-size: 9px;
+      font-style: normal;
+      letter-spacing: .1em;
+    }
+
+    .mobile-nav a span {
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .mobile-nav a .ico {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* Main team section: generous top clearance below the sticky header. */
+    .qf-team-page {
+      position: relative;
+      isolation: isolate;
+      overflow: clip;
+      background: #fff;
+    }
+
+    .qf-team-section {
+      position: relative;
+      padding: clamp(76px, 9vw, 128px) 28px 112px !important;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 4%, rgba(226, 194, 143, .13), transparent 38%),
+        linear-gradient(180deg, #fff 0%, #fff 72%, #fbfaf8 100%) !important;
+    }
+
+    .qf-team-section::before {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      opacity: .22;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(28, 31, 37, .18) .65px, transparent .65px);
+      background-size: 23px 23px;
+      mask-image: linear-gradient(to bottom, black, transparent 62%);
+    }
+
+    .qf-team-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1180px, 100%) !important;
+      margin-inline: auto !important;
+    }
+
+    .qf-team-heading {
+      position: relative;
+      z-index: 0;
+      width: min(850px, 100%);
+      min-height: 300px;
+      margin: 0 auto 22px !important;
+      padding: 14px 18px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      isolation: isolate;
+    }
+
+    .qf-team-heading::after {
+      position: absolute;
+      z-index: -2;
+      top: 50%;
+      left: 50%;
+      width: min(680px, 94vw);
+      aspect-ratio: 1;
+      border: 1px solid rgba(189, 129, 46, .075);
+      border-radius: 50%;
+      content: "";
+      transform: translate(-50%, -48%);
+      pointer-events: none;
+    }
+
+    .qf-team-kicker {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      margin: 0 0 23px !important;
+      color: #a87532 !important;
+      font: 750 9px/1.4 Inter, sans-serif !important;
+      letter-spacing: .24em !important;
+    }
+
+    .qf-kicker-line {
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #c18a45);
+    }
+
+    .qf-kicker-line:last-child {
+      transform: rotate(180deg);
+    }
+
+    .qf-team-heading h1 {
+      max-width: 850px;
+      margin: 0 !important;
+      color: #202329 !important;
+      font: 500 clamp(43px, 7vw, 82px)/.99 "Inter Tight", Inter, sans-serif !important;
+      letter-spacing: -.075em !important;
+      text-wrap: balance;
+    }
+
+    .qf-team-heading h1 em {
+      color: #b27a35;
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: 1.08em;
+      font-weight: 400;
+      letter-spacing: -.055em;
+    }
+
+    .qf-team-heading h1 strong {
+      color: #202329 !important;
+      font-weight: 750 !important;
+    }
+
+    .qf-team-intro {
+      max-width: 490px;
+      margin: 21px auto 0 !important;
+      color: #777b82 !important;
+      font: 400 13px/1.85 Inter, sans-serif !important;
+      text-wrap: balance;
+    }
+
+    .qf-team-heading-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 27px;
+      color: #8b8d91;
+      font: 700 8px/1.4 Inter, sans-serif;
+      letter-spacing: .15em;
+    }
+
+    .qf-team-heading-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .qf-meta-pulse {
+      position: relative;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #b9874b;
+      box-shadow: 0 0 0 4px rgba(185, 135, 75, .12);
+    }
+
+    /* Fine orbital illustration behind the heading. */
+    .qf-team-orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      width: min(470px, 72vw);
+      aspect-ratio: 1;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+    }
+
+    .qf-orbit-ring {
+      position: absolute;
+      inset: 8%;
+      border: 1px solid rgba(183, 133, 67, .14);
+      border-radius: 50%;
+    }
+
+    .qf-orbit-ring--one {
+      transform: rotate(-22deg) scaleY(.72);
+      animation: qftOrbitDrift 24s linear infinite;
+    }
+
+    .qf-orbit-ring--two {
+      inset: 17%;
+      border-color: rgba(31, 35, 42, .07);
+      transform: rotate(36deg) scaleY(.72);
+      animation: qftOrbitDrift 32s linear infinite reverse;
+    }
+
+    .qf-orbit-core {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #c18a45;
+      box-shadow: 0 0 0 9px rgba(193, 138, 69, .08), 0 0 35px rgba(193, 138, 69, .2);
+      transform: translate(-50%, -50%);
+    }
+
+    .qf-orbit-dot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #c18a45;
+      box-shadow: 0 0 0 5px rgba(193, 138, 69, .1);
+    }
+
+    .qf-orbit-dot--one {
+      top: 19%;
+      right: 22%;
+    }
+
+    .qf-orbit-dot--two {
+      bottom: 22%;
+      left: 17%;
+      width: 4px;
+      height: 4px;
+      background: #9ca0a5;
+      box-shadow: 0 0 0 5px rgba(156, 160, 165, .1);
+    }
+
+    @keyframes qftOrbitDrift {
+      from { rotate: 0deg; }
+      to { rotate: 360deg; }
+    }
+
+    /* Filter controls become a calm, pill-shaped control group. */
+    .qf-team-filters {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px !important;
+      width: max-content;
+      max-width: 100%;
+      margin: 28px auto 22px !important;
+      padding: 5px;
+      border: 1px solid rgba(30, 34, 40, .08);
+      border-radius: 999px;
+      background: rgba(248, 247, 244, .9);
+      box-shadow: 0 5px 20px rgba(25, 29, 36, .035);
+    }
+
+    .qf-filter {
+      min-width: 82px;
+      padding: 11px 17px !important;
+      border: 0;
+      border-radius: 999px;
+      color: #777b82 !important;
+      font: 750 8px/1.2 Inter, sans-serif !important;
+      letter-spacing: .16em !important;
+      transition: color .25s ease, background .25s ease, box-shadow .25s ease, transform .25s ease !important;
+    }
+
+    .qf-filter::after {
+      display: none;
+    }
+
+    .qf-filter:hover {
+      color: #9a692c !important;
+      transform: translateY(-1px);
+    }
+
+    .qf-filter.is-active {
+      color: #fff !important;
+      background: #22252b;
+      box-shadow: 0 4px 12px rgba(25, 29, 36, .14);
+    }
+
+    .qf-filter.is-active:hover {
+      color: #fff !important;
+    }
+
+    .qf-team-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      width: min(900px, 100%);
+      margin: 0 auto 25px;
+      padding: 0 2px 13px;
+      border-bottom: 1px solid rgba(28, 31, 37, .09);
+    }
+
+    .qf-team-count,
+    .qf-team-hint {
+      margin: 0;
+      color: #999ba0;
+      font: 600 9px/1.5 Inter, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .qf-team-count strong {
+      margin-right: 7px;
+      color: #272a30;
+      font: 750 11px/1 "Inter Tight", sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .qf-team-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .qf-hint-star {
+      color: #bd812e;
+      font-size: 13px;
+    }
+
+    /* Team member grid and portrait interaction. */
+    .qf-team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: clamp(34px, 6vw, 82px) !important;
+      row-gap: clamp(48px, 6vw, 74px) !important;
+      width: min(900px, 100%);
+      margin: 0 auto !important;
+    }
+
+    .qf-member {
+      position: relative;
+      min-width: 0;
+      padding: 0 0 5px;
+      animation: qftMemberEnter .75s var(--qft-ease) both;
+      transition: opacity .3s ease, transform .3s ease;
+    }
+
+    .qf-member::after {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      z-index: -1;
+      width: 76%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(189, 129, 46, 0);
+      border-radius: 50%;
+      content: "";
+      transform: translateX(-50%) scale(.88);
+      transition: border-color .45s ease, transform .65s var(--qft-ease);
+    }
+
+    .qf-member:hover::after {
+      border-color: rgba(189, 129, 46, .19);
+      transform: translateX(-50%) scale(1.08);
+    }
+
+    .qf-member[hidden] {
+      display: none !important;
+    }
+
+    .qf-member-portrait {
+      width: clamp(160px, 17vw, 198px) !important;
+      max-width: 100%;
+      aspect-ratio: 1;
+      overflow: hidden;
+      border: 7px solid #fff;
+      border-radius: 50%;
+      background: #eceae6;
+      box-shadow: 0 0 0 1px rgba(24, 28, 34, .08), 0 13px 34px rgba(25, 29, 36, .055) !important;
+      transition: transform .6s var(--qft-ease), box-shadow .5s ease !important;
+    }
+
+    .qf-member-portrait::before {
+      inset: 5px !important;
+      border: 1px solid rgba(255, 255, 255, .8) !important;
+    }
+
+    .qf-member-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      filter: grayscale(1) contrast(.96);
+      transform: scale(1.02);
+      transition: filter .65s ease, transform .9s var(--qft-ease);
+    }
+
+    .qf-member:hover .qf-member-portrait,
+    .qf-member:focus-within .qf-member-portrait {
+      transform: translateY(-8px) scale(1.015) !important;
+      box-shadow: 0 0 0 1px rgba(189, 129, 46, .24), 0 22px 48px rgba(25, 29, 36, .14) !important;
+    }
+
+    .qf-member:hover .qf-member-portrait img,
+    .qf-member:focus-within .qf-member-portrait img {
+      filter: grayscale(0) saturate(.9);
+      transform: scale(1.09);
+    }
+
+    .qf-member h2 {
+      margin: 19px 0 6px !important;
+      color: #292c31 !important;
+      font: 750 13px/1.35 "Inter Tight", Inter, sans-serif !important;
+      letter-spacing: .095em !important;
+      text-transform: uppercase;
+    }
+
+    .qf-member-role {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin: 0 !important;
+      color: #b27a35 !important;
+      font: 750 8px/1.5 Inter, sans-serif !important;
+      letter-spacing: .16em !important;
+    }
+
+    .qf-member-role::before,
+    .qf-member-role::after {
+      width: 12px;
+      height: 1px;
+      background: rgba(178, 122, 53, .38);
+      content: "";
+    }
+
+    @keyframes qftMemberEnter {
+      from { opacity: 0; transform: translateY(22px) scale(.985); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Values strip: a second visual rhythm beneath the portraits. */
+    .qf-team-principles {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      width: min(1020px, 100%);
+      margin: clamp(86px, 10vw, 132px) auto 0;
+      border-top: 1px solid rgba(28, 31, 37, .11);
+      border-bottom: 1px solid rgba(28, 31, 37, .11);
+    }
+
+    .qf-principle {
+      position: relative;
+      min-height: 190px;
+      padding: 25px 30px 28px;
+      overflow: hidden;
+      transition: background .35s ease;
+    }
+
+    .qf-principle + .qf-principle {
+      border-left: 1px solid rgba(28, 31, 37, .1);
+    }
+
+    .qf-principle:hover {
+      background: rgba(246, 243, 237, .72);
+    }
+
+    .qf-principle-index {
+      display: block;
+      color: #a8a6a1;
+      font: 750 8px/1.4 Inter, sans-serif;
+      letter-spacing: .17em;
+    }
+
+    .qf-principle-symbol {
+      position: absolute;
+      top: 19px;
+      right: 27px;
+      color: rgba(189, 129, 46, .65);
+      font: 400 22px/1 Georgia, serif;
+      transition: transform .5s var(--qft-ease), color .3s ease;
+    }
+
+    .qf-principle:hover .qf-principle-symbol {
+      color: #a87532;
+      transform: rotate(45deg) scale(1.18);
+    }
+
+    .qf-principle h2 {
+      margin: 29px 0 8px;
+      color: #24272d;
+      font: 650 19px/1.2 "Inter Tight", sans-serif;
+      letter-spacing: -.04em;
+    }
+
+    .qf-principle p {
+      max-width: 230px;
+      margin: 0;
+      color: #85878c;
+      font: 400 11px/1.8 Inter, sans-serif;
+    }
+
+    .qf-team-endnote {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 37px auto 0;
+    }
+
+    .qf-team-endnote p {
+      margin: 0;
+      color: #a0a0a0;
+      font: 600 8px/1.5 Inter, sans-serif;
+      letter-spacing: .18em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .qf-endnote-rule {
+      width: 34px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #c6a77c);
+    }
+
+    .qf-endnote-rule:last-child {
+      transform: rotate(180deg);
+    }
+
+    /* Reveal states are intentionally subtle and respect reduced motion. */
+    .qf-team-heading,
+    .qf-team-toolbar,
+    .qf-team-principles,
+    .qf-team-endnote {
+      animation: qftFadeUp .8s var(--qft-ease) both;
+    }
+
+    .qf-team-toolbar {
+      animation-delay: .08s;
+    }
+
+    .qf-team-principles {
+      animation-delay: .12s;
+    }
+
+    @keyframes qftFadeUp {
+      from { opacity: 0; translate: 0 16px; }
+      to { opacity: 1; translate: 0 0; }
+    }
+
+    /* Footer spacing remains compatible with the existing site footer. */
+    .site-footer {
+      position: relative;
+      isolation: isolate;
+    }
+
+    .site-footer .contact-inner,
+    .site-footer .footer-shell {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Tablet layout. */
+    @media (max-width: 900px) {
+      .qf-team-section {
+        padding-inline: 24px !important;
+      }
+
+      .qf-team-heading {
+        min-height: 270px;
+      }
+
+      .qf-team-grid {
+        column-gap: 34px !important;
+      }
+
+      .qf-member-portrait {
+        width: clamp(150px, 23vw, 188px) !important;
+      }
+
+      .qf-principle {
+        padding-inline: 22px;
+      }
+    }
+
+    /* Compact tablet and mobile. */
+    @media (max-width: 680px) {
+      .qf-team-section {
+        padding: 56px 18px 78px !important;
+      }
+
+      .qf-team-heading {
+        min-height: 255px;
+        padding-inline: 5px;
+      }
+
+      .qf-team-heading h1 {
+        font-size: clamp(43px, 10vw, 66px) !important;
+      }
+
+      .qf-team-kicker {
+        margin-bottom: 19px !important;
+        font-size: 8px !important;
+      }
+
+      .qf-team-intro {
+        max-width: 370px;
+        font-size: 12px !important;
+      }
+
+      .qf-team-heading-meta {
+        gap: 9px 14px;
+        margin-top: 22px;
+        font-size: 7px;
+      }
+
+      .qf-team-filters {
+        margin-top: 22px !important;
+        margin-bottom: 20px !important;
+      }
+
+      .qf-filter {
+        min-width: 72px;
+        padding: 10px 13px !important;
+      }
+
+      .qf-team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 38px 18px !important;
+      }
+
+      .qf-member-portrait {
+        width: clamp(125px, 34vw, 170px) !important;
+      }
+
+      .qf-member h2 {
+        margin-top: 15px !important;
+        font-size: 11px !important;
+      }
+
+      .qf-member-role {
+        font-size: 7px !important;
+      }
+
+      .qf-team-principles {
+        grid-template-columns: 1fr;
+        margin-top: 76px;
+      }
+
+      .qf-principle {
+        min-height: 145px;
+        padding: 22px 24px;
+      }
+
+      .qf-principle + .qf-principle {
+        border-top: 1px solid rgba(28, 31, 37, .1);
+        border-left: 0;
+      }
+
+      .qf-principle h2 {
+        margin-top: 19px;
+      }
+
+      .qf-principle p {
+        max-width: 330px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .qf-team-section {
+        padding-inline: 14px !important;
+      }
+
+      .qf-team-heading {
+        min-height: 238px;
+      }
+
+      .qf-team-heading h1 {
+        font-size: 42px !important;
+      }
+
+      .qf-team-heading-meta {
+        gap: 8px 10px;
+        font-size: 6px;
+      }
+
+      .qf-team-filters {
+        gap: 2px !important;
+      }
+
+      .qf-filter {
+        min-width: 65px;
+        padding-inline: 10px !important;
+        font-size: 7px !important;
+      }
+
+      .qf-team-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 22px;
+      }
+
+      .qf-team-grid {
+        column-gap: 10px !important;
+        row-gap: 32px !important;
+      }
+
+      .qf-member-portrait {
+        width: min(39vw, 145px) !important;
+        border-width: 5px;
+      }
+
+      .qf-member h2 {
+        font-size: 10px !important;
+        letter-spacing: .07em !important;
+      }
+
+      .qf-member-role {
+        gap: 4px;
+        font-size: 6px !important;
+      }
+
+      .qf-member-role::before,
+      .qf-member-role::after {
+        width: 7px;
+      }
+    }
+
+    /* Large desktop: maintain a clear, centered editorial composition. */
+    @media (min-width: 1440px) {
+      .qf-team-section {
+        padding-top: 132px !important;
+      }
+
+      .qf-team-heading {
+        min-height: 340px;
+      }
+
+      .qf-team-grid {
+        row-gap: 82px !important;
+      }
+
+      .qf-member-portrait {
+        width: 205px !important;
+      }
+    }
+
+    /* Accessibility and motion preferences. */
+    .qf-filter:focus-visible,
+    .nav-link:focus-visible,
+    .btn-nav:focus-visible,
+    .qf-member:focus-visible {
+      outline: 2px solid #bd812e;
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .qf-team-orbit *,
+      .qf-team-heading,
+      .qf-team-toolbar,
+      .qf-team-principles,
+      .qf-team-endnote,
+      .qf-member {
+        animation: none !important;
+      }
+
+      .qf-member-portrait,
+      .qf-member-portrait img,
+      .qf-principle,
+      .qf-principle-symbol,
+      .qf-filter,
+      .nav-link,
+      .btn-nav {
+        transition: none !important;
+      }
+    }
+  </style>
+
+
+  <style id="qf-team-utility-layer">
+    /* Small composable utilities reserved for future team-page content. */
+    /* Utility family: spacing. */
+    .qft-spacing-0 { gap: 0px; }
+    .qft-spacing-1 { gap: 4px; }
+    .qft-spacing-2 { gap: 8px; }
+    .qft-spacing-3 { gap: 12px; }
+    .qft-spacing-4 { gap: 16px; }
+    .qft-spacing-5 { gap: 20px; }
+    .qft-spacing-6 { gap: 24px; }
+    .qft-spacing-8 { gap: 32px; }
+    .qft-spacing-10 { gap: 40px; }
+    .qft-spacing-12 { gap: 48px; }
+    .qft-spacing-16 { gap: 64px; }
+    .qft-spacing-20 { gap: 80px; }
+    .qft-spacing-24 { gap: 96px; }
+    .qft-spacing-28 { gap: 112px; }
+    .qft-spacing-32 { gap: 128px; }
+    .qft-spacing-40 { gap: 160px; }
+    .qft-spacing-48 { gap: 192px; }
+    .qft-spacing-56 { gap: 224px; }
+    .qft-spacing-64 { gap: 256px; }
+    .qft-spacing-72 { gap: 288px; }
+    .qft-spacing-80 { gap: 320px; }
+    .qft-spacing-96 { gap: 384px; }
+    /* Utility family: radius. */
+    .qft-radius-none { border-radius: 0; }
+    .qft-radius-xs { border-radius: 4px; }
+    .qft-radius-sm { border-radius: 7px; }
+    .qft-radius-md { border-radius: 10px; }
+    .qft-radius-lg { border-radius: 14px; }
+    .qft-radius-xl { border-radius: 18px; }
+    .qft-radius-2xl { border-radius: 24px; }
+    .qft-radius-3xl { border-radius: 32px; }
+    .qft-radius-full { border-radius: 999px; }
+    /* Utility family: type. */
+    .qft-type-xs { font-size: 10px; }
+    .qft-type-sm { font-size: 12px; }
+    .qft-type-base { font-size: 14px; }
+    .qft-type-lg { font-size: 16px; }
+    .qft-type-xl { font-size: 20px; }
+    .qft-type-2xl { font-size: 24px; }
+    .qft-type-3xl { font-size: 30px; }
+    .qft-type-4xl { font-size: 38px; }
+    .qft-type-5xl { font-size: 48px; }
+    /* Utility family: tracking. */
+    .qft-tracking-tight { letter-spacing: -.04em; }
+    .qft-tracking-normal { letter-spacing: 0; }
+    .qft-tracking-wide { letter-spacing: .04em; }
+    .qft-tracking-wider { letter-spacing: .1em; }
+    .qft-tracking-widest { letter-spacing: .18em; }
+    /* Utility family: opacity. */
+    .qft-opacity-0 { opacity: 0.00; }
+    .qft-opacity-5 { opacity: 0.05; }
+    .qft-opacity-10 { opacity: 0.10; }
+    .qft-opacity-15 { opacity: 0.15; }
+    .qft-opacity-20 { opacity: 0.20; }
+    .qft-opacity-25 { opacity: 0.25; }
+    .qft-opacity-30 { opacity: 0.30; }
+    .qft-opacity-40 { opacity: 0.40; }
+    .qft-opacity-50 { opacity: 0.50; }
+    .qft-opacity-60 { opacity: 0.60; }
+    .qft-opacity-70 { opacity: 0.70; }
+    .qft-opacity-75 { opacity: 0.75; }
+    .qft-opacity-80 { opacity: 0.80; }
+    .qft-opacity-90 { opacity: 0.90; }
+    .qft-opacity-100 { opacity: 1.00; }
+    /* Utility family: motion. */
+    .qft-motion-fast { transition-duration: .18s; }
+    .qft-motion-normal { transition-duration: .3s; }
+    .qft-motion-slow { transition-duration: .5s; }
+    .qft-motion-slower { transition-duration: .8s; }
+    /* Utility family: layout. */
+    .qft-layout-start { justify-content: flex-start; }
+    .qft-layout-center { justify-content: center; }
+    .qft-layout-end { justify-content: flex-end; }
+    .qft-layout-between { justify-content: space-between; }
+    .qft-layout-around { justify-content: space-around; }
+    .qft-layout-evenly { justify-content: space-evenly; }
+    /* Utility family: width. */
+    .qft-width-full { width: 100%; }
+    .qft-width-screen { width: 100vw; }
+    .qft-width-fit { width: fit-content; }
+    .qft-width-min { width: min-content; }
+    .qft-width-max { width: max-content; }
+    .qft-width-prose { width: 65ch; }
+    .qft-width-narrow { width: 48rem; }
+    .qft-width-wide { width: 80rem; }
+    /* Utility family: height. */
+    .qft-height-auto { height: auto; }
+    .qft-height-full { height: 100%; }
+    .qft-height-screen { height: 100vh; }
+    .qft-height-min { height: min-content; }
+    .qft-height-max { height: max-content; }
+    /* Utility family: border. */
+    .qft-border-none { border: 0; }
+    .qft-border-thin { border: 1px solid var(--qft-line); }
+    .qft-border-medium { border: 2px solid var(--qft-line); }
+    .qft-border-thick { border: 3px solid var(--qft-line); }
+  </style>
+
+
+  <style id="qf-team-clean-professional">
+    /* Clean professional direction: typography, alignment and generous whitespace. */
+    .qf-team-section {
+      padding: clamp(76px, 9vw, 112px) 28px 104px !important;
+      background: #fff !important;
+    }
+
+    .qf-team-section::before,
+    .qf-team-heading::after,
+    .qf-team-orbit,
+    .qf-team-heading-meta,
+    .qf-team-kicker,
+    .qf-team-principles,
+    .qf-team-endnote,
+    .qf-team-hint {
+      display: none !important;
+      content: none !important;
+      animation: none !important;
+    }
+
+    .qf-team-inner {
+      width: min(1160px, 100%) !important;
+    }
+
+    .qf-team-heading {
+      display: block !important;
+      width: 100% !important;
+      min-height: 0 !important;
+      margin: 0 auto 54px !important;
+      padding: 0 !important;
+      text-align: center !important;
+      animation: none !important;
+    }
+
+    .qf-team-heading h1 {
+      margin: 0 !important;
+      color: #17191d !important;
+      font-family: "Inter Tight", "Helvetica Neue", Arial, sans-serif !important;
+      font-size: clamp(64px, 9.4vw, 118px) !important;
+      font-weight: 650 !important;
+      line-height: .98 !important;
+      letter-spacing: -.085em !important;
+      text-transform: none !important;
+      text-wrap: balance;
+    }
+
+    .qf-team-heading h1 em {
+      color: #a87532 !important;
+      font-family: "Instrument Serif", Georgia, serif !important;
+      font-size: 1.04em !important;
+      font-weight: 400 !important;
+      font-style: italic !important;
+      letter-spacing: -.065em !important;
+    }
+
+    .qf-team-filters {
+      margin: 0 auto 30px !important;
+      padding: 4px !important;
+      border: 1px solid #e9e7e2 !important;
+      background: #f8f7f5 !important;
+      box-shadow: none !important;
+    }
+
+    .qf-filter {
+      min-width: 88px !important;
+      padding: 12px 19px !important;
+      font-size: 9px !important;
+      letter-spacing: .12em !important;
+    }
+
+    .qf-filter.is-active {
+      background: #202329 !important;
+      box-shadow: none !important;
+    }
+
+    .qf-team-toolbar {
+      width: min(980px, 100%) !important;
+      margin: 0 auto 30px !important;
+      padding: 0 0 12px !important;
+      border-bottom: 1px solid #e9e7e2 !important;
+      animation: none !important;
+    }
+
+    .qf-team-count {
+      color: #8a8b8e !important;
+      font-size: 10px !important;
+      letter-spacing: .02em !important;
+    }
+
+    .qf-team-count strong {
+      color: #25282d !important;
+      font-size: 12px !important;
+    }
+
+    .qf-team-grid {
+      width: min(980px, 100%) !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      column-gap: clamp(28px, 5vw, 68px) !important;
+      row-gap: clamp(44px, 5vw, 66px) !important;
+    }
+
+    .qf-member {
+      text-align: center !important;
+      animation: none !important;
+    }
+
+    .qf-member::after {
+      display: none !important;
+    }
+
+    .qf-member-portrait {
+      width: clamp(160px, 17vw, 194px) !important;
+      border: 5px solid #fff !important;
+      box-shadow: 0 0 0 1px #e9e7e2, 0 12px 30px rgba(20, 24, 30, .07) !important;
+    }
+
+    .qf-member-portrait img {
+      filter: grayscale(.82) !important;
+      transition: filter .45s ease, transform .65s cubic-bezier(.2,.75,.25,1) !important;
+    }
+
+    .qf-member:hover .qf-member-portrait,
+    .qf-member:focus-within .qf-member-portrait {
+      transform: translateY(-5px) !important;
+      box-shadow: 0 0 0 1px rgba(168, 117, 50, .35), 0 18px 38px rgba(20, 24, 30, .11) !important;
+    }
+
+    .qf-member:hover .qf-member-portrait img,
+    .qf-member:focus-within .qf-member-portrait img {
+      filter: grayscale(0) !important;
+    }
+
+    .qf-member h2 {
+      margin: 18px 0 6px !important;
+      color: #24272d !important;
+      font-size: 13px !important;
+      letter-spacing: .075em !important;
+    }
+
+    .qf-member-role {
+      color: #a87532 !important;
+      font-size: 8px !important;
+      letter-spacing: .15em !important;
+    }
+
+    .qf-member-role::before,
+    .qf-member-role::after {
+      display: none !important;
+    }
+
+    @media (max-width: 760px) {
+      .qf-team-section {
+        padding: 66px 20px 82px !important;
+      }
+
+      .qf-team-heading {
+        margin-bottom: 42px !important;
+      }
+
+      .qf-team-heading h1 {
+        font-size: clamp(54px, 11vw, 82px) !important;
+      }
+
+      .qf-team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 42px 20px !important;
+      }
+
+      .qf-member-portrait {
+        width: clamp(130px, 31vw, 174px) !important;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .qf-team-section {
+        padding-inline: 15px !important;
+      }
+
+      .qf-team-heading h1 {
+        font-size: 51px !important;
+      }
+
+      .qf-team-grid {
+        column-gap: 12px !important;
+      }
+
+      .qf-member-portrait {
+        width: min(39vw, 145px) !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .qf-member-portrait,
+      .qf-member-portrait img,
+      .qf-filter {
+        transition: none !important;
+      }
+    }
+
+/* PERFECTLY CENTER THE MEET OUR TEAM HEADING */
+.qf-team-inner {
+  width: min(1160px, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.qf-team-heading {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+.qf-team-heading h1 {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+/* Responsive alignment */
+@media (max-width: 760px) {
+  .qf-team-heading {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .qf-team-heading h1 {
+    width: 100% !important;
+    font-size: clamp(48px, 10vw, 76px) !important;
+    text-align: center !important;
+  }
+}
+
+  </style>
+
+</head>
+<body class="inner-page page-light" id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11.5" height="11.5" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M15.5 6.2V5.7A2.7 2.7 0 0 0 12.8 3H5.7A2.7 2.7 0 0 0 3 5.7v7.1a2.7 2.7 0 0 0 2.7 2.7h.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.7 5.4 4.1 8.8 9.5 9.5-5.4.7-8.8 4.1-9.5 9.5-.7-5.4-4.1-8.8-9.5-9.5 5.4-.7 8.8-4.1 9.5-9.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 2.8 7.4 7 9.5 4.2-2.1 7-5.2 7-9.5V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.6-4-9s1.4-6.5 4-9Z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 20c.5-3.4 2.6-5 5.5-5s5 1.6 5.5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M16 5.5a3 3 0 0 1 0 5.8M17 15c2.2.3 3.4 1.8 3.8 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h9.5a4 4 0 0 0 .4-8 6 6 0 0 0-11.6 1.2A3.5 3.5 0 0 0 7 18Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9.5 14 2 2 3.5-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-4.5 5L8 17M16 7l4.5 5L16 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="m13.5 4.8-3 14.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8 16.5V12M12.5 16.5V8M17 16.5v-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="13" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11L9.5 22 19 10.5h-6.5L13 2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m4 20 4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m13.5 7.5 3 3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-orbit" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6" fill="currentColor"/><ellipse cx="12" cy="12" rx="9" ry="4.2" transform="rotate(-28 12 12)" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+    <symbol id="i-convert" viewBox="0 0 24 24"><path d="M4 8h14M15 4.5 18.5 8 15 11.5M20 16H6M9 12.5 5.5 16 9 19.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 5.5h2M12 18.5h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 20h6M12 16.5V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 7V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6V7M3 12h18" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3.5h7l5 5V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M13 3.5V9h5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3.5 9h3v11.5h-3V9Zm5.5 0h2.9v1.6h.1c.4-.8 1.5-1.8 3.2-1.8 3.4 0 4 2.2 4 5.1v6.6h-3v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1v6h-3V9Z" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 3.5h4.6L14 10l5.6-6.5h2.6l-7 8.1L22 20.5h-4.6L12 14l-6 6.5H3.4l7.3-8.4L4 3.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2.8a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.7c-2.6.6-3.1-1.1-3.1-1.1-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.4 1 1.4 1 .8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.3-2.1-.2-4.3-1-4.3-4.6 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.6 1a9 9 0 0 1 4.7 0c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.6.6.6 1 1.5 1 2.5 0 3.6-2.2 4.4-4.3 4.6.3.3.6.9.6 1.8v2.7c0 .3.2.6.5.5A9.4 9.4 0 0 0 12 2.8Z" fill="currentColor"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5-10-6.5Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="../index.html" aria-label="QuadraFroyn Solutions home">
+        <img src="../assets/logo.png" alt="" width="94" height="86">
+        <span class="nav-word">QuadraFroyn<small>Solutions</small></span>
+      </a>
+      <nav class="nav-primary" aria-label="Primary">
+        <details class="nav-drop">
+          <summary class="nav-link">Services<svg class="ico nav-caret" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <div class="nav-drop-panel">
+            <a href="services.html">All services <small>05</small></a>
+            <a href="mobile_app_development.html">Mobile app development</a><a href="website_development.html">Website development</a><a href="ai_automation.html">AI &amp; automation</a><a href="career_guidance.html">Career guidance</a><a href="software_development.html">Software development</a>
+          </div>
+        </details>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="careers.html">Careers</a>
+        
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-nav" href="#contact" data-magnetic>
+          <span>Start a project</span>
+          <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+        </a>
+        <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-scrim" data-menu-close></div>
+    <div class="mobile-sheet" role="dialog" aria-modal="true" aria-label="Site menu">
+      <div class="mobile-head">
+        <a class="mobile-brand" href="../index.html" data-menu-close><span>QuadraFroyn</span><em>Solutions</em></a>
+        <button class="mobile-close" type="button" aria-label="Close menu" data-menu-close>
+          <svg class="ico" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a href="../index.html"><i>01</i><span>Home</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="services.html"><i>02</i><span>Services</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="products.html"><i>03</i><span>Products</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="careers.html"><i>04</i><span>Careers</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="gallery.html"><i>05</i><span>Gallery</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="ourteam.html"><i>06</i><span>Our Team</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="about.html"><i>07</i><span>About</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="#contact"><i>08</i><span>Contact</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </nav>
+      <div class="mobile-foot">
+        <a class="btn btn-light btn-lg" href="#contact" data-menu-close>
+          <span>Start a project</span>
+          <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+        </a>
+        <a class="mobile-mail" href="mailto:info@quadrafroynsolutions.in">info@quadrafroynsolutions.in</a>
+        <p>India · Working worldwide</p>
+      </div>
+    </div>
+  </div>
+
+
+  <main id="main" class="qf-team-page">
+    <section class="qf-team-section" aria-labelledby="qf-team-title">
+      <div class="qf-team-inner">
+        <header class="qf-team-heading">
+          <h1 id="qf-team-title">Meet <em>Our Team</em></h1>
+        </header>
+
+        <div class="qf-team-filters" role="group" aria-label="Filter team members">
+          <button class="qf-filter is-active" type="button" data-filter="all" aria-pressed="true">ALL</button>
+          <button class="qf-filter" type="button" data-filter="founder" aria-pressed="false">FOUNDERS</button>
+          <button class="qf-filter" type="button" data-filter="employee" aria-pressed="false">TEAM</button>
+        </div>
+
+        <div class="qf-team-toolbar">
+          <p class="qf-team-count"><strong data-member-count>06</strong> <span>team members</span></p>
+        </div>
+        <div class="qf-team-grid">
+          <!-- Replace the sample portrait URLs, names and roles with your actual team details. -->
+          <article class="qf-member" data-category="founder">
+            <div class="qf-member-portrait"><img src="..\assets\images\gallery\meera.png" alt="Portrait of Founder 01" loading="lazy"></div>
+            <h2>MEERADHARSHINI K</h2><p class="qf-member-role">FOUNDER</p>
+          </article>
+          <article class="qf-member" data-category="founder">
+            <div class="qf-member-portrait"><img src="..\assets\images\gallery\uma.png" alt="Portrait of Founder 02" loading="lazy"></div>
+            <h2>UMA BHARATHI A</h2><p class="qf-member-role">FOUNDER</p>
+          </article>
+          <article class="qf-member" data-category="founder">
+            <div class="qf-member-portrait"><img src="..\assets\images\gallery\d3.png" alt="Portrait of Founder 03" loading="lazy"></div>
+            <h2>DHANALAKSHMI E</h2><p class="qf-member-role">FOUNDER</p>
+          </article>
+          <article class="qf-member" data-category="founder">
+            <div class="qf-member-portrait"><img src="..\assets\images\gallery\n2.png" alt="Portrait of Founder 04" loading="lazy"></div>
+            <h2>NITHIYA SRI M</h2><p class="qf-member-role">FOUNDER</p>
+          </article>
+          <article class="qf-member" data-category="employee">
+            <div class="qf-member-portrait"><img src="..\assets\images\gallery\abi.jpeg" alt="Portrait of Team Member 01" loading="lazy"></div>
+            <h2>ABINAYA M</h2><p class="qf-member-role">DIGITAL MARKETING & CLIENT ACQUISITION</p>
+          </article>
+          <article class="qf-member" data-category="employee">
+            <div class="qf-member-portrait"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=700&amp;q=88" alt="Portrait of Team Member 02" loading="lazy"></div>
+            <h2>Team Member 02</h2><p class="qf-member-role">TEAM MEMBER</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer closing" id="contact-footer" aria-label="Contact and footer">
+    <div class="closing-grain" aria-hidden="true"></div>
+    <div class="footer-aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
+    <section class="contact contact--merged" aria-labelledby="contactTitle">
+      <button class="drag-stamp" type="button" data-drag-stamp aria-label="Playful sticker. Drag to move and spin, arrow keys to move, Q and E to rotate.">
+        <svg viewBox="0 0 180 180" aria-hidden="true" focusable="false">
+          <defs><path id="dragStampPath" d="M90 90m-64 0a64 64 0 1 1 128 0a64 64 0 1 1 -128 0"/></defs>
+          <text><textPath href="#dragStampPath">Drag · Spin · Build with us · Drag · Spin · </textPath></text>
+        </svg>
+        <span class="drag-stamp-core"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg></span>
+      </button>
+
+      <div class="container contact-inner">
+        <p class="eyebrow eyebrow--light" data-reveal="up"><span>06</span> Start a project</p>
+        <h2 class="contact-title" id="contactTitle" data-split data-masked>Have a product in mind? Let's <span class="accent vapor" data-vapor>build</span> it.</h2>
+        <p class="contact-lead" data-reveal="up" data-delay="80">Tell us what you're building and where it's stuck. We'll reply within two business days with a clear point of view — no deck, no sales theatre.</p>
+
+        <div class="contact-actions" data-reveal="up" data-delay="150">
+          <a class="btn btn-light btn-lg" href="mailto:info@quadrafroynsolutions.in?subject=Project%20enquiry" data-magnetic>
+            <svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>
+            <span>info@quadrafroynsolutions.in</span>
+          </a>
+          <button class="btn btn-ghost btn-lg" type="button" data-copy="info@quadrafroynsolutions.in" data-magnetic>
+            <svg class="ico ico-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+            <svg class="ico ico-check" aria-hidden="true"><use href="#i-check"/></svg>
+            <span data-copy-label>Copy email</span>
+          </button>
+          <a class="btn btn-accent btn-lg" href="mailto:info@quadrafroynsolutions.in?subject=Project%20quote" data-magnetic>
+            <span>Get a quote</span>
+            <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+          </a>
+        </div>
+
+        <div class="contact-foot" data-reveal="up" data-delay="220">
+          <p><span class="status-dot"></span> Booking new projects for early 2027</p>
+          <p>Prefer a call? <a href="mailto:info@quadrafroynsolutions.in?subject=Intro%20call">Book 30 minutes <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container footer-shell">
+      <div class="footer-cols">
+        <div class="footer-brand" data-reveal="up">
+          <p class="footer-brand-name">QuadraFroyn<em>Solutions</em></p>
+          <p class="footer-brand-copy">A product-led software company in India, engineering mobile apps, platforms, websites and AI tools for teams that care about the details.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="QuadraFroyn on LinkedIn"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="QuadraFroyn on X"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="QuadraFroyn on GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a>
+            <a href="mailto:info@quadrafroynsolutions.in" aria-label="Email QuadraFroyn Solutions"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation" data-reveal="up" data-delay="80">
+          <div>
+            <h4>Studio</h4>
+            <a href="services.html">Our services</a>
+            <a href="../index.html#process">How we work</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="ourteam.html">Our Team</a>
+            <a href="../index.html#reviews">Client notes</a>
+            <a href="about.html">About us</a>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <a href="mobile_app_development.html">Mobile app development</a>
+            <a href="software_development.html">Software development</a>
+            <a href="website_development.html">Website development</a>
+            <a href="ai_automation.html">AI &amp; automation</a>
+            <a href="career_guidance.html">Career guidance</a>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <a href="products.html">All products</a>
+            <a href="products.html#quadraconverter">QuadraConverter</a>
+            <a href="https://quadraresumebuilder.in/" target="_blank" rel="noopener noreferrer">Quadra AI Resume Builder</a>
+            <span class="footer-soon">QuadraBill <em>Coming soon</em></span>
+            <a href="careers.html">Careers</a>
+            <button type="button" data-dialog="reel">Company reel</button>
+            <a href="#contact-footer">Start a project</a>
+            <a href="#top">Back to top</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-stage" data-footer-stage>
+        <div class="footer-stage-label">
+          <p>Product-led software company</p>
+          <p>Design · Build · Ship · Support</p>
+        </div>
+        <div class="footer-wordmark" data-footer-wordmark aria-hidden="true">QuadraFroyn</div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> QuadraFroyn Solutions</p>
+        <p>Concept portfolio — products, clients and quotes are illustrative.</p>
+        <a href="#top" class="footer-top-link">Back to top <svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      </div>
+    </div>
+  </footer>
+  <button class="p-top" type="button" data-top aria-label="Back to top"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+
+
+
+  <script>
+    (() => {
+      "use strict";
+
+      const filterButtons = Array.from(document.querySelectorAll(".qf-filter"));
+      const memberCards = Array.from(document.querySelectorAll(".qf-member"));
+      const memberCount = document.querySelector("[data-member-count]");
+      const teamGrid = document.querySelector(".qf-team-grid");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      const formatCount = (value) => String(value).padStart(2, "0");
+
+      const updateCount = (visibleCount) => {
+        if (memberCount) {
+          memberCount.textContent = formatCount(visibleCount);
+        }
+      };
+
+      const animateVisibleCards = (visibleCards) => {
+        visibleCards.forEach((card, index) => {
+          card.style.animation = "none";
+          void card.offsetWidth;
+          if (!reduceMotion.matches) {
+            card.style.animation = `qftMemberEnter .7s cubic-bezier(.2,.75,.25,1) ${index * 65}ms both`;
+          }
+        });
+      };
+
+      const applyFilter = (selectedFilter, activeButton) => {
+        let visibleCount = 0;
+
+        filterButtons.forEach((button) => {
+          const isActive = button === activeButton;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        memberCards.forEach((card) => {
+          const matches = selectedFilter === "all" ||
+            card.dataset.category === selectedFilter;
+
+          card.hidden = !matches;
+
+          if (matches) {
+            visibleCount += 1;
+          }
+        });
+
+        updateCount(visibleCount);
+        animateVisibleCards(memberCards.filter((card) => !card.hidden));
+
+        if (teamGrid) {
+          teamGrid.setAttribute("data-visible-count", String(visibleCount));
+        }
+      };
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyFilter(button.dataset.filter || "all", button);
+        });
+      });
+
+      updateCount(memberCards.length);
+
+      /* Give the active filter a stable keyboard focus treatment. */
+      filterButtons.forEach((button, index) => {
+        button.addEventListener("keydown", (event) => {
+          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+          event.preventDefault();
+
+          let nextIndex = index;
+          if (event.key === "ArrowLeft") nextIndex = (index - 1 + filterButtons.length) % filterButtons.length;
+          if (event.key === "ArrowRight") nextIndex = (index + 1) % filterButtons.length;
+          if (event.key === "Home") nextIndex = 0;
+          if (event.key === "End") nextIndex = filterButtons.length - 1;
+
+          filterButtons[nextIndex].focus();
+          filterButtons[nextIndex].click();
+        });
+      });
+
+      /* Keep the copyright year current without changing the footer copy. */
+      const yearNode = document.querySelector("[data-year]");
+      if (yearNode) yearNode.textContent = String(new Date().getFullYear());
+
+      /* Close the desktop dropdown after a destination is chosen. */
+      document.querySelectorAll(".nav-drop-panel a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const dropdown = link.closest(".nav-drop");
+          if (dropdown) dropdown.open = false;
+        });
+      });
+
+      /* Keep the menu trigger's accessible state in sync with the site menu. */
+      const menu = document.getElementById("mobileMenu");
+      const menuButton = document.querySelector(".nav-burger");
+
+      if (menu && menuButton) {
+        const menuObserver = new MutationObserver(() => {
+          const isOpen = menu.classList.contains("is-open") ||
+            menu.getAttribute("aria-hidden") === "false";
+
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+          menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        });
+
+        menuObserver.observe(menu, {
+          attributes: true,
+          attributeFilter: ["class", "aria-hidden"]
+        });
+      }
+
+      /* Avoid a stuck hover state when a touch device taps a portrait. */
+      memberCards.forEach((card) => {
+        card.addEventListener("touchstart", () => {
+          card.classList.add("is-touched");
+        }, { passive: true });
+      });
+    })();
+  </script>
+
+  <script src="../js/forms-api.js" defer></script>
+  <script src="../js/core.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/pages.js" defer></script>
+  <script src="../js/pages-v15.js" defer></script>
+</body>
+</html>
