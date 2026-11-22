@@ -205,3 +205,4 @@ All motion respects `prefers-reduced-motion`, with one deliberate exception: the
 Contact/enquiry forms, the Get a Quote popup, and Careers application popup post to the included Node API. All submissions are addressed to `info@quadrafroynsolutions.in`. Configure SMTP credentials before deployment; see [`EMAIL_SETUP.md`](EMAIL_SETUP.md). The credentials are intentionally not included in the project ZIP.
 "# portfolio" 
 "# Quadrafroyn_Solutionsportr" 
+"# Quadrafroyn_Solutionsportr" 
