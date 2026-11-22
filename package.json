@@ -1,18 +1,21 @@
+
 {
   "name": "quadrafroyn-solutions-site",
   "version": "16.0.0",
   "private": true,
   "description": "QuadraFroyn Solutions website with secure email form delivery",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "start": "node server.js",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "nodemailer": "^10.6.1"
-  },
-  "devDependencies": {
+    "nodemailer": "^10.6.1",
     "vite": "^8.3.8"
   }
 }
