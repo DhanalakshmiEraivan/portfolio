@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # SMTP_USER and MAIL_TO hold the public contact address that is shown on
+  # every page of the site, so they are not secret. SMTP_PASS and the other
+  # credentials are still scanned.
+  SECRETS_SCAN_OMIT_KEYS = "SMTP_USER,MAIL_TO"
